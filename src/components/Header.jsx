@@ -65,7 +65,7 @@ const Header = () => {
                             Contact
                         </a>
                         <a
-                            href="https://github.com/ItsEragon/OncoType"
+                            href="https://github.com/ItsEragon/TumorTracer"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="bg-gray-800 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition-colors duration-200 flex items-center cursor-pointer"
@@ -93,7 +93,7 @@ const Header = () => {
                                 Contact
                             </a>
                             <a
-                                href="https://github.com/ItsEragon/OncoType"
+                                href="https://github.com/ItsEragon/TumorTracer"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="max-w-[100px] text-center bg-gray-800 text-white block px-4 py-2 rounded-md text-sm font-medium hover:bg-gray-700 transition-colors duration-200 mt-2 flex items-center justify-center cursor-pointer"
