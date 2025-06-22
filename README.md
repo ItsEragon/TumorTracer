@@ -15,7 +15,7 @@
 
 ## Demo
 
-<!-- ![Tumor Tracer Screenshot](screenshot.png) --> <!-- Add a screenshot if available -->
+![Tumor Tracer Screenshot](./public/Screenshot.png)
 
 ## Getting Started
 
@@ -28,7 +28,7 @@
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/ItsEragon/OncoType.git
+   git clone https://github.com/ItsEragon/TumorTracer.git
    cd OncoType
    ```
 
@@ -72,13 +72,13 @@ npm run preview
 ```
 src/
   components/      # React components (Header, Hero, DetectionSection, About, Contact, Footer, ScrollToTopButton)
-  assets/          # (Unused, can be deleted)
+  assets/          
   index.css        # Tailwind and custom styles
   main.jsx         # App entry point
 public/
   favicon.png      # App icon
-  favicon.svg      # (Unused, can be deleted)
-  vite.svg         # (Unused, can be deleted)
+  favicon.svg      
+  vite.svg         
 index.html         # Main HTML file
 tailwind.config.js # Tailwind configuration
 vite.config.js     # Vite configuration
