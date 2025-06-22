@@ -13,7 +13,7 @@
 - **Modern UI/UX:** Beautiful, professional design with pixel-perfect alignment, smooth animations, and a floating scroll-to-top button for easy navigation.
 - **Open Source:** Easily extensible and customizable for research or clinical use.
 
-## Demo
+## Screenshot
 
 ![Tumor Tracer Screenshot](./public/Screenshot.png)
 
