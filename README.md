@@ -23,13 +23,14 @@
 
 - Node.js (v18+ recommended)
 - npm
+- Python 3.8+
 
-### Installation
+### Installation (Frontend)
 
 1. **Clone the repository:**
    ```bash
    git clone https://github.com/ItsEragon/TumorTracer.git
-   cd OncoType
+   cd TumorTracer
    ```
 
 2. **Install dependencies:**
@@ -43,6 +44,32 @@
    ```
 
 4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### Backend Setup (Local API)
+
+The backend is a FastAPI app for brain tumor detection and segmentation. You can run it locally for development or deploy it to a server/cloud.
+
+1. **Install Python dependencies:**
+   ```bash
+   cd backend
+   pip install -r requirements.txt
+   ```
+
+2. **Run the API server:**
+   ```bash
+   uvicorn app.main:app --host 0.0.0.0 --port 8000
+   ```
+
+   The API will be available at [http://localhost:8000](http://localhost:8000). The prediction endpoint is `/predict/`.
+
+> **Note:** The model weights file (`tumor_segmentation_model.pth`) must be present in the `backend/` directory.
+
+3. **(Optional) Run with Docker:**
+   ```bash
+   cd backend
+   docker build -t tumor-tracer-backend .
+   docker run -p 8000:8000 tumor-tracer-backend
+   ```
 
 ### Build for Production
 
@@ -70,18 +97,26 @@ npm run preview
 ## Project Structure
 
 ```
+backend/
+  app/
+    main.py            # FastAPI app
+    model.py           # Model loading and prediction logic
+  Dockerfile           # For containerized deployment
+  requirements.txt     # Python dependencies
+  tumor_segmentation_model.pth # Model weights (required)
+  README.md            # Backend-specific info
 src/
-  components/      # React components (Header, Hero, DetectionSection, About, Contact, Footer, ScrollToTopButton)
-  assets/          
-  index.css        # Tailwind and custom styles
-  main.jsx         # App entry point
+  components/          # React components (Header, Hero, DetectionSection, About, Contact, Footer, ScrollToTopButton)
+  assets/              # Static assets
+  index.css            # Tailwind and custom styles
+  main.jsx             # App entry point
 public/
-  favicon.png      # App icon
-  favicon.svg      
-  vite.svg         
-index.html         # Main HTML file
-tailwind.config.js # Tailwind configuration
-vite.config.js     # Vite configuration
+  favicon.png          # App icon
+  favicon.svg          # SVG icon
+  vite.svg             # Vite logo
+index.html             # Main HTML file
+tailwind.config.js     # Tailwind configuration
+vite.config.js         # Vite configuration
 ```
 
 ## Customization
@@ -113,3 +148,16 @@ Connect with us:
 - [LinkedIn](https://linkedin.com/in/itseragon)
 - [GitHub](https://github.com/ItsEragon)
 - [Twitter](https://x.com/reek312)
+
+## Backend
+
+The backend is a FastAPI-based REST API for brain tumor detection and segmentation. It loads a PyTorch model and exposes a `/predict/` endpoint that accepts MRI images and returns tumor segmentation results (including a mask and overlay as base64 images).
+
+- **Tech stack:** FastAPI, PyTorch, segmentation-models-pytorch, OpenCV, Pillow
+- **Entry point:** `backend/app/main.py`
+- **Model weights:** `backend/tumor_segmentation_model.pth`
+- **Install dependencies:** `pip install -r requirements.txt`
+- **Run locally:** `uvicorn app.main:app --host 0.0.0.0 --port 8000`
+- **Docker support:** See `backend/Dockerfile`
+
+The frontend connects to this backend via the `/predict/` endpoint. You can change the API URL in `src/components/DetectionSection.jsx` if self-hosting.
