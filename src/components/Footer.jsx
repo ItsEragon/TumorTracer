@@ -21,7 +21,7 @@ const Footer = () => {
             {/* Bottom Bar */}
             <div className="mt-6 pt-6 border-t border-gray-800 text-center">
                 <div className="text-gray-400 pb-6 text-sm">
-                    Copyright © Tumor Tracer {currentYear} - All rights reserved
+                    Copyright © {currentYear} Tumor Tracer - All rights reserved
                 </div>
             </div>
         </footer>
