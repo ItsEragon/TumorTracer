@@ -45,11 +45,11 @@ const Hero = () => {
                         {/* Stats */}
                         <div className="grid grid-cols-3 gap-6 pt-8">
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-blue-600">99%</div>
+                                <div className="text-3xl font-bold text-blue-600">75%</div>
                                 <div className="text-sm text-gray-600">Accuracy</div>
                             </div>
                             <div className="text-center">
-                                <div className="text-3xl font-bold text-purple-600">&lt;30s</div>
+                                <div className="text-3xl font-bold text-purple-600">&lt;10s</div>
                                 <div className="text-sm text-gray-600">Processing Time</div>
                             </div>
                             <div className="text-center">

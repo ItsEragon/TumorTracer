@@ -15,7 +15,7 @@ const Footer = () => {
                     </a>
                 </div>
                 <p className="text-gray-300 mb-2 text-center max-w-xl">
-                    Revolutionizing brain tumor detection with cutting-edge AI technology. Providing healthcare professionals with rapid, accurate, and reliable diagnostic support.
+                    We're trying to revolutionize brain tumor detection with cutting-edge AI technology. Providing healthcare professionals with rapid, accurate, and reliable diagnostic support.
                 </p>
             </div>
             {/* Bottom Bar */}

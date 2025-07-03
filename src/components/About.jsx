@@ -9,7 +9,7 @@ const About = () => {
                 </svg>
             ),
             title: "Lightning Fast",
-            description: "Get results in under 30 seconds with our optimized AI model"
+            description: "Get results in under 10 seconds with our optimized AI model"
         },
         {
             icon: (
@@ -18,7 +18,7 @@ const About = () => {
                 </svg>
             ),
             title: "High Accuracy",
-            description: "99% accuracy rate with advanced deep learning algorithms"
+            description: "75% accuracy rate with advanced deep learning algorithms"
         },
         {
             icon: (
@@ -27,7 +27,7 @@ const About = () => {
                 </svg>
             ),
             title: "Segmentation Analysis",
-            description: "Detailed tumor segmentation with precise boundary detection"
+            description: "Brain tumor segmentation with precise boundary detection"
         },
         {
             icon: (
@@ -67,7 +67,7 @@ const About = () => {
                         About Tumor Tracer
                     </h2>
                     <p className="text-base sm:text-xl text-gray-600 max-w-2xl mx-auto">
-                        We're revolutionizing brain tumor detection with cutting-edge artificial intelligence technology,
+                        We're trying to revolutionize brain tumor detection with cutting-edge artificial intelligence technology,
                         providing healthcare professionals and patients with rapid, accurate, and reliable diagnostic support.
                     </p>
                 </div>
@@ -79,8 +79,8 @@ const About = () => {
                             Advanced AI Technology
                         </h3>
                         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
-                            Our system utilizes state-of-the-art deep learning models trained on extensive datasets of brain MRI scans.
-                            The AI can detect various types of brain tumors with exceptional accuracy, providing detailed segmentation
+                            Our system utilizes state-of-the-art deep learning model trained on extensive datasets of brain MRI scans.
+                            The AI can detect brain tumor with exceptional accuracy, providing segmentation
                             and analysis in real-time.
                         </p>
                         <p className="text-base sm:text-lg text-gray-600 leading-relaxed">
@@ -104,15 +104,15 @@ const About = () => {
                             <div className="bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl p-6">
                                 <div className="grid grid-cols-2 gap-4">
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-blue-600 mb-2">99%</div>
+                                        <div className="text-3xl font-bold text-blue-600 mb-2">75%</div>
                                         <div className="text-sm text-gray-600">Accuracy</div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-purple-600 mb-2">&lt;30s</div>
+                                        <div className="text-3xl font-bold text-purple-600 mb-2">&lt;10s</div>
                                         <div className="text-sm text-gray-600">Processing</div>
                                     </div>
                                     <div className="text-center">
-                                        <div className="text-3xl font-bold text-green-600 mb-2">10K+</div>
+                                        <div className="text-3xl font-bold text-green-600 mb-2">4K+</div>
                                         <div className="text-sm text-gray-600">Scans</div>
                                     </div>
                                     <div className="text-center">

@@ -83,7 +83,7 @@ const DetectionSection = () => {
                         Brain Tumor Detection
                     </h2>
                     <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-                        Upload your MRI scan and get instant AI-powered analysis with detailed results and segmentation
+                        Upload your MRI scan and get instant AI-powered analysis with results and segmentation
                     </p>
                 </div>
 
